@@ -49,7 +49,7 @@ btn.addEventListener('click', function() {
     result.textContent = `Total Revenue = ${computeTotalRevenue().toFixed(2)}`;
 
   else if(totalCostofGoodsRadio.checked)
-    result.textContent = `Total Cost of Goods = ${computeTotalCostofGoodsRadio().toFixed(2)}`;
+    result.textContent = `Total Cost of Goods = ${computeTotalCostofGoods().toFixed(2)}`;
 })
 
 // calculation
@@ -62,6 +62,6 @@ function computeTotalRevenue() {
   return Number(grossProfit.value) + Number(totalCostofGoods.value);
 }
 
-function computeTotalCostofGoodsRadio() {
+function computeTotalCostofGoods() {
   return Number(totalRevenue.value) - Number(grossProfit.value);
 }
